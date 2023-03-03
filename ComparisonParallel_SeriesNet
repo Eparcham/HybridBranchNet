@@ -1,7 +1,18 @@
-Deep neural networks can be designed using different architectures, including parallel and series architectures. These architectures refer to the way in which the layers of the network are arranged and connected to each other.
+Deep neural networks can be designed using different architectures,
+including parallel and series architectures. 
+These architectures refer to the way in which the layers of the network are arranged and connected to each other.
 
-In a parallel architecture, multiple neural networks are connected in parallel and their outputs are combined at a later stage. This approach can be useful when dealing with multiple types of inputs or when trying to create an ensemble of models. For example, in computer vision, multiple parallel networks could be used to process different features of an image (e.g., color, texture, edges) and their outputs could be combined to create a final prediction.
+In a parallel architecture, multiple neural networks are connected in parallel and their outputs are combined at a later stage.
+This approach can be useful when dealing with multiple types of inputs or when trying to create an ensemble of models.
+For example, in computer vision, multiple parallel networks could be used to process different features of an image (e.g., color, texture, edges)
+and their outputs could be combined to create a final prediction.
 
-In contrast, a series architecture, also known as a sequential architecture, is a more traditional approach where the layers of the network are arranged in a linear sequence. Each layer receives the output of the previous layer as input, and the final output of the network is produced by the last layer. This type of architecture is often used for tasks such as language modeling or time series prediction, where the order of the inputs is important.
+In contrast, a series architecture, also known as a sequential architecture,
+is a more traditional approach where the layers of the network are arranged in a linear sequence.
+Each layer receives the output of the previous layer as input, and the final output of the network is produced by the last layer.
+This type of architecture is often used for tasks such as language modeling or time series prediction,
+where the order of the inputs is important.
 
-It's worth noting that these architectures are not mutually exclusive, and it's possible to combine them in various ways to create more complex neural networks. In fact, many modern neural networks use a combination of both parallel and series architectures to achieve better performance.
+It's worth noting that these architectures are not mutually exclusive,
+and it's possible to combine them in various ways to create more complex neural networks.
+In fact, many modern neural networks use a combination of both parallel and series architectures to achieve better performance.

@@ -36,3 +36,60 @@ This research introduces the HybridBranchNet models, emphasizing the optimizatio
 The impact of preprocessing techniques on image classification was also explored, indicating significant improvements in image quality and classification accuracy. These techniques include contrast enhancement and edge improvement, informed by the works of KeGu and colleagues, as well as Mr. Chunwei Tian.
 
 This summary encapsulates the core achievements and insights from the research on HybridBranchNet models, underlining their efficiency, effectiveness, and potential as a competitive architecture in deep learning for image classification.
+
+## Detailed Results and Comparisons
+
+### Accuracy Comparison on ImageNet
+
+| Method              | Top-1 Acc (%) | Top-5 Acc (%) | #Params | Infer time (ms) | Train-time (hours) |
+|---------------------|---------------|---------------|---------|-----------------|--------------------|
+| HybridBranchNet0    | 78.3          | 94.1          | 5.1M    | 8               | 26                 |
+| EfficientNetB0      | 77.1          | 93.3          | 5.3M    | 10              | 65                 |
+| HybridBranchNet1    | 81.6          | 95.1          | 6.87M   | 13              | 30                 |
+| EfficientNetB1      | 79.1          | 94.4          | 7.8M    | 23              | 93                 |
+| HybridBranchNet2    | 82.7          | 95.8          | 8.11M   | 15              | 33                 |
+| EfficientNetB2      | 80.1          | 94.9          | 9.2M    | 31              | 110                |
+| HybridBranchNet3    | 83.1          | 96.7          | 9.12M   | 25              | 35                 |
+| EfficientNetB3      | 81.6          | 95.8          | 12M     | 43              | 120                |
+| ResNet              | 77.8          | 93.8          | 60M     | 56              | -                  |
+| DenceNet            | 77.9          | 93.9          | 34M     | 52              | -                  |
+| Inception           | 80.9          | 95.1          | 48M     | 60              | -                  |
+| EfficientNetV2-S    | 83.9          | 97.3          | 22M     | 27              | 90                 |
+
+### Temporal Performance Comparison
+
+| Method            | model1 | model2 | model3 | model4 |
+|-------------------|--------|--------|--------|--------|
+| HybridBranchNet   | 8 ms   | 13 ms  | 15 ms  | 25 ms  |
+| EfficientNet      | 10 ms  | 23 ms  | 31 ms  | 43 ms  |
+| ResNet            | 22 ms  | 35 ms  | 42 ms  | 56 ms  |
+| DenceNet          | 40 ms  | 52 ms  | NA     | NA     |
+| Inception         | 45 ms  | 60 ms  | NA     | NA     |
+
+### CIFAR-100 Dataset Comparison
+
+| Model                     | Accuracy (%) | Parameters |
+|---------------------------|--------------|------------|
+| EffNet-L2                 | 96.08        | ≈ 480M     |
+| MViT-B-16                 | 93.95        | ≈ 37M      |
+| Oct-ResNet-152 (SE)       | 87.80        | ≈ 67M      |
+| EfficientNet-b7 Tan and Le| 91.70        | ≈ 64M      |
+| EfficientNetV2-L          | 92.26        | ≈ 120M     |
+| EfficientNetV2-M          | 92.27        | ≈ 54M      |
+| ResNet-50 (Fast AA)       | 83.64        | ≈ 25M      |
+| DenseNet-264              | 83.95        | ≈ 105M     |
+| HybridBranchNet3          | 92.30        | ≈ 9M       |
+
+### Flowers-102 Dataset Comparison
+
+| Model                     | Accuracy (%) | Parameters |
+|---------------------------|--------------|------------|
+| EffNet-L2                 | 99.65        | ≈ 480M     |
+| MViT-B-16                 | 98.50        | ≈ 37M      |
+| Oct-ResNet-152 (SE)       | 98.21        | ≈ 67M      |
+| EfficientNet-b7 Tan and Le| 98.80        | ≈ 64M      |
+| EfficientNetV2-L          | 98.80        | ≈ 120M     |
+| EfficientNetV2-M          | 98.50        | ≈ 54M      |
+| ResNet-50 (Fast AA)       | 97.90        | ≈ 25M      |
+| HybridBranchNet3          | 98.80        | ≈ 9M       |
+
